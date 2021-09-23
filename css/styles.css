@@ -1,0 +1,242 @@
+/* =====================================================================================
+   Contents
+   1. Reset & Axioms
+   2. Components
+   3. Layout
+   ===================================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap");
+
+/* =====================================================================================
+   1. Reset & Axioms
+   ===================================================================================== */
+
+/* The 1rem part of the equation ensures the font-size 
+never drops below the default (system/browser/user defined) 
+value. That is, 1rem + 0vw is 1rem. */
+:root {
+  font-size: calc(1rem + 0.5vw);
+  --measure: 65ch;
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+  --title-font: "Gentium Basic", serif;
+  --body-font: "Courier New", Courier, monospace;
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  border: 0 solid;
+  box-sizing: border-box;
+  color: var(--secondary-color);
+  margin: 0;
+  overflow-wrap: break-word;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* Removes default margin - DOES THE ABOVE * SELECTOR ALREADY DO THIS? */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Restricts characters per line by exception */
+* {
+  max-width: var(--measure);
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer {
+  max-width: none;
+}
+
+body {
+  color: var(--secondary-color);
+  font-family: var(--body-font);
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: var(--body-font);
+  text-align: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.bg {
+  background-image: url(http://www.susularoche.com/files/slaroche_v3.jpg);
+  background-size: 100% 100%;
+}
+
+.max-width {
+  max-width: 100%;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cont a {
+  margin: 1.5rem;
+  color: var(--secondary-color);
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+}
+
+.link-cont {
+  max-width: 100vw;
+  /* border: 2px solid red; */
+}
+
+/* 
+   Stack
+   ===================================================================================== */
+
+.stack {
+  --space: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stack > * + * {
+  margin-top: var(--space);
+}
+
+.stack-exception,
+.stack-exception + * {
+  --space: 10rem;
+}
+
+/* 
+   Styling Classes
+   ===================================================================================== */
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.back-link {
+  color: var(--secondary-color);
+  font-family: var(--title-font);
+  font-size: 1rem;
+  padding: 15px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+footer {
+  font-size: 0.8rem;
+  font-family: var(--title-font);
+  bottom: 0;
+  margin: 3rem 0 0;
+}
+
+.left {
+  text-align: left;
+}
+
+.info {
+  width: 100%;
+}
+
+.gallery-img {
+  max-width: 50%;
+}
+
+.music-img {
+  max-width: 30%;
+}
+
+.music-img + p {
+  font-size: 0.8rem;
+}
+
+.vimeo {
+  max-width: 100%;
+}
