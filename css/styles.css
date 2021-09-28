@@ -15,7 +15,7 @@
 never drops below the default (system/browser/user defined) 
 value. That is, 1rem + 0vw is 1rem. */
 :root {
-  font-size: calc(1rem + 0.5vw);
+  font-size: calc(0.8rem + 0.5vw);
   --measure: 65ch;
   --ratio: 1.5;
   --s-5: calc(var(--s-4) / var(--ratio));
@@ -29,7 +29,8 @@ value. That is, 1rem + 0vw is 1rem. */
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
-  --title-font: "Gentium Basic", serif;
+  --title-font: Lucida Console, Lucida Sans Typewriter, monaco,
+    Bitstream Vera Sans Mono, monospace;
   --body-font: "Courier New", Courier, monospace;
   --primary-color: #000;
   --secondary-color: #fff;
@@ -116,7 +117,7 @@ body {
 }
 
 .bg {
-  background-image: url(http://www.susularoche.com/files/slaroche_v3.jpg);
+  background-image: url(https://raw.githubusercontent.com/neither-neither/slaroche/main/images/bg-slaroche-1.jpeg);
   background-size: 100% 100%;
 }
 
@@ -205,7 +206,7 @@ body {
   font-family: var(--title-font);
   font-size: 1rem;
   padding: 15px;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
 }
@@ -214,7 +215,7 @@ footer {
   font-size: 0.8rem;
   font-family: var(--title-font);
   bottom: 0;
-  margin: 3rem 0 0;
+  margin: 3rem 0 0 0;
 }
 
 .left {
@@ -239,4 +240,51 @@ footer {
 
 .vimeo {
   max-width: 100%;
+}
+
+.previous p {
+  min-width: 90vw;
+}
+
+.film-link:hover {
+  opacity: 0.7;
+}
+/* BACKGROUNDS */
+
+.bg-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://raw.githubusercontent.com/neither-neither/slaroche/main/images/bg-3.jpg)
+      no-repeat center center fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bg-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://raw.githubusercontent.com/neither-neither/slaroche/main/images/bg-1.jpg)
+      no-repeat center center fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.dread-majesty {
+  background: url(http://susularoche.com/files/12_background.gif) no-repeat
+    center center fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.body-of-work {
+  background: url(/Users/apple/Desktop/Coding/projects/susu/images/film/body-of-work-bg.jpeg)
+    no-repeat center center fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

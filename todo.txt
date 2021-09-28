@@ -1,0 +1,2 @@
+change images to lower res
+add stats
