@@ -29,8 +29,8 @@ value. That is, 1rem + 0vw is 1rem. */
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
-  --title-font: Lucida Console, Lucida Sans Typewriter, monaco,
-    Bitstream Vera Sans Mono, monospace;
+  /* --title-font: Lucida Console, Lucida Sans Typewriter, monaco,
+    Bitstream Vera Sans Mono, monospace; */
   --body-font: "Courier New", Courier, monospace;
   --primary-color: #000;
   --secondary-color: #fff;
@@ -97,7 +97,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--title-font);
+  font-family: var(--body-font);
 }
 
 a:hover {
@@ -204,11 +204,15 @@ body {
 .back-link {
   color: var(--secondary-color);
   font-family: var(--title-font);
-  font-size: 1rem;
+  font-size: 2rem;
   padding: 15px;
-  position: absolute;
+  position: fixed; /*MAKE ABSOLUTE FOR MOBILE*/
   left: 0;
   top: 0;
+}
+
+.link-ul {
+  text-decoration: underline;
 }
 
 footer {
@@ -228,6 +232,10 @@ footer {
 
 .gallery-img {
   max-width: 50%;
+}
+
+.film-img {
+  width: 30rem;
 }
 
 .music-img {
