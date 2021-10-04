@@ -2,6 +2,8 @@
    1. Reset & Axioms
    ===================================================================================== */
 
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap");
+
 /* The 1rem part of the equation ensures the font-size 
 never drops below the default (system/browser/user defined) 
 value. That is, 1rem + 0vw is 1rem. */
@@ -20,7 +22,8 @@ value. That is, 1rem + 0vw is 1rem. */
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
-  --body-font: "Courier New", Courier, monospace;
+  /* --body-font: "Courier New", Courier, monospace; */
+  --body-font: "IM Fell DW Pica", serif;
   --primary-color: #000;
   --secondary-color: #fff;
 }
@@ -228,7 +231,7 @@ footer {
 /* BACKGROUNDS */
 
 .bg-1 {
-  background: url(https://raw.githubusercontent.com/neither-neither/slaroche/main/images/bg-slaroche-1.jpeg)
+  background: url(https://raw.githubusercontent.com/neither-neither/slaroche/main/images/girlboss.jpeg)
     no-repeat center center fixed;
   -moz-background-size: cover;
   -webkit-background-size: cover;
