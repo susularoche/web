@@ -22,7 +22,6 @@ value. That is, 1rem + 0vw is 1rem. */
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
-  /* --body-font: "Courier New", Courier, monospace; */
   --body-font: "IM Fell DW Pica", serif;
   --primary-color: #000;
   --secondary-color: #fff;
@@ -40,7 +39,7 @@ value. That is, 1rem + 0vw is 1rem. */
   text-decoration: none;
 }
 
-/* Removes default margin - DOES THE ABOVE * SELECTOR ALREADY DO THIS? */
+/* Removes default margin */
 body,
 h1,
 h2,
@@ -169,17 +168,12 @@ a:hover {
 }
 
 .cont {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   min-height: 100vh;
 }
 
 .cont a {
   margin: 1.5rem;
   color: var(--secondary-color);
-  /* font-family: var(--title-font); */
   font-size: 1.5rem;
 }
 
@@ -197,7 +191,7 @@ a:hover {
   font-size: 2rem;
   font-weight: bold;
   padding: 15px;
-  position: fixed; /*MAKE ABSOLUTE FOR MOBILE*/
+  position: fixed;
   left: 0;
   top: 0;
 }
@@ -231,7 +225,7 @@ footer {
 /* BACKGROUNDS */
 
 .bg-1 {
-  background: url(https://raw.githubusercontent.com/neither-neither/slaroche/main/images/bg-slaroche-1.jpeg)
+  background: url(https://raw.githubusercontent.com/susularoche/web/main/images/bg-slaroche-1.jpeg)
     no-repeat center center fixed;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -241,7 +235,7 @@ footer {
 
 .bg-2 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(https://raw.githubusercontent.com/neither-neither/slaroche/main/images/bg-1.jpg)
+    url(https://raw.githubusercontent.com/susularoche/web/main/images/bg-1.jpg)
       no-repeat center center fixed;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -251,7 +245,7 @@ footer {
 
 .bg-3 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(https://raw.githubusercontent.com/neither-neither/slaroche/main/images/bg-3.jpg)
+    url(https://raw.githubusercontent.com/susularoche/web/main/images/bg-3.jpg)
       no-repeat center center fixed;
   -moz-background-size: cover;
   -webkit-background-size: cover;
