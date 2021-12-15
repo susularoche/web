@@ -2,7 +2,7 @@
    1. Reset & Axioms
    ===================================================================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai&display=swap");
 
 /* The 1rem part of the equation ensures the font-size 
 never drops below the default (system/browser/user defined) 
@@ -22,7 +22,7 @@ value. That is, 1rem + 0vw is 1rem. */
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
-  --body-font: "IM Fell DW Pica", serif;
+  --body-font: "Almarai", sans-serif;
   --primary-color: #000;
   --secondary-color: #fff;
 }
@@ -216,6 +216,12 @@ footer {
   max-width: 100%;
 }
 
+/* MUSIC */
+
+#music a {
+  text-decoration: underline;
+}
+
 /* INFO */
 
 .previous p {
@@ -271,3 +277,4 @@ footer {
     max-width: 90%;
   }
 }
+
